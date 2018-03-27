@@ -1035,7 +1035,16 @@
 		}
 
 	/* Header */
-
 		#header nav {
 			padding: 0 1em;
-		} }
+		}
+	/* Lysak */
+	/*	li {
+			border-right: 3px solid hsl(3, 80%, 40%);
+		}
+		li:last-child {
+			border-right: none;
+		}*/
+		ul {
+			user-select: none;
+		}
