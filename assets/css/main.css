@@ -1045,6 +1045,10 @@
 		li:last-child {
 			border-right: none;
 		}*/
-		ul {
+		ol, ul {
+			user-select: none!important;
+		}
+		
+		p {
 			user-select: none;
 		}
