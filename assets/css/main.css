@@ -28,6 +28,7 @@
 
 	ol, ul {
 		list-style: none;
+		user-select: none;
 	}
 
 	blockquote, q {
@@ -521,6 +522,7 @@
 		}
 
 		#header p {
+			user-select: none;
 			font-size: 1.25em;
 			margin: 0.75em auto 0.25em auto;
 			opacity: 0.75;
@@ -1037,18 +1039,4 @@
 	/* Header */
 		#header nav {
 			padding: 0 1em;
-		}
-	/* Lysak */
-	/*	li {
-			border-right: 3px solid hsl(3, 80%, 40%);
-		}
-		li:last-child {
-			border-right: none;
-		}*/
-		ol, ul {
-			user-select: none!important;
-		}
-		
-		p {
-			user-select: none;
 		}
