@@ -45,8 +45,9 @@
             </div>
         </div>
         <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="assets/js/moment.js"></script>
         <script>
-            document.querySelector('#header > p > span').innerHTML = new Date().getFullYear() - 1995;
+            document.querySelector('#header > p > span').innerHTML = moment(812764800, "X").fromNow().replace(/\D+/g,"");
             window.onload = function() { document.body.className = ''; }
             window.ontouchmove = function() { return false; }
             window.onorientationchange = function() { document.body.scrollTop = 0; }
