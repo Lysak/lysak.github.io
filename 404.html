@@ -5,9 +5,9 @@
       /* Finally, a use for "groove"! */
       border: 24px groove rebeccapurple;
 
-      display: table-cell;
+      /*display: table-cell;*/
       border-radius: 999px;
-      animation: spin 15s linear infinite;
+      animation: spin 10s linear infinite;
     }
 
     @keyframes spin {
@@ -33,7 +33,7 @@
     }
 
     body div {
-    	background: rebeccapurple;
+    	/*background: rebeccapurple;*/
     }
 </style>
 <head>
@@ -64,5 +64,10 @@
         window.location.href = '/'
     }
     document.body.addEventListener("click", clickBody);
+
+	var min=50; 
+    var max=90;  
+    var random = Math.floor(Math.random() * (+max - +min)) + +min;
+    document.getElementsByTagName("div")[0].style.width = random + '%';
 </script>
 </html>
