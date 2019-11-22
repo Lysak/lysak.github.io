@@ -1,3 +1,4 @@
+@import url("font-awesome.min.css");
 /* source-sans-pro-300 - cyrillic_latin_latin-ext_cyrillic-ext */
 @font-face {
     font-family: 'Source Sans Pro';
@@ -27,8 +28,6 @@
     src: local('Source Sans Pro Black'), local('SourceSansPro-Black'),
     url('/assets/fonts/source-sans-pro-v13-cyrillic_latin_latin-ext_cyrillic-ext-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/assets/fonts/source-sans-pro-v13-cyrillic_latin_latin-ext_cyrillic-ext-900.woff2') format('woff2'), /* Super Modern Browsers */ url('/assets/fonts/source-sans-pro-v13-cyrillic_latin_latin-ext_cyrillic-ext-900.woff') format('woff'), /* Modern Browsers */ url('/assets/fonts/source-sans-pro-v13-cyrillic_latin_latin-ext_cyrillic-ext-900.ttf') format('truetype'), /* Safari, Android, iOS */ url('/assets/fonts/source-sans-pro-v13-cyrillic_latin_latin-ext_cyrillic-ext-900.svg#SourceSansPro') format('svg'); /* Legacy iOS */
 }
-
-@import url("font-awesome.min.css");
 
 /*
 	Aerial by HTML5 UP
