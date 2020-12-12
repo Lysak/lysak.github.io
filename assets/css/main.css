@@ -29,6 +29,38 @@
     url('/assets/fonts/source-sans-pro-v13-cyrillic_latin_latin-ext_cyrillic-ext-900.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/assets/fonts/source-sans-pro-v13-cyrillic_latin_latin-ext_cyrillic-ext-900.woff2') format('woff2'), /* Super Modern Browsers */ url('/assets/fonts/source-sans-pro-v13-cyrillic_latin_latin-ext_cyrillic-ext-900.woff') format('woff'), /* Modern Browsers */ url('/assets/fonts/source-sans-pro-v13-cyrillic_latin_latin-ext_cyrillic-ext-900.ttf') format('truetype'), /* Safari, Android, iOS */ url('/assets/fonts/source-sans-pro-v13-cyrillic_latin_latin-ext_cyrillic-ext-900.svg#SourceSansPro') format('svg'); /* Legacy iOS */
 }
 
+@font-face {
+    font-family: 'Grotesque Pro Bold';
+    src: url("/assets/fonts/grotesque/grotesque-pro-bold.eot");
+    src: url("/assets/fonts/grotesque/grotesque-pro-bold.eot") format("embedded-opentype"), url("/assets/fonts/grotesque/grotesque-pro-bold.html") format("woff2"), url("/assets/fonts/grotesque/grotesque-pro-bold.woff") format("woff"), url("/assets/fonts/grotesque/grotesque-pro-bold.ttf") format("truetype"), url("/assets/fonts/grotesque/grotesque-pro-bold.svg") format("svg");
+    font-weight: bold;
+    /*font-style: bold;*/
+}
+
+@font-face {
+    font-family: 'Grotesque Pro Regular Light';
+    src: url("/assets/fonts/grotesque/grotesque-pro-light.eot");
+    src: url("/assets/fonts/grotesque/grotesque-pro-light.eot") format("embedded-opentype"), url("/assets/fonts/grotesque/grotesque-pro-light.html") format("woff2"), url("/assets/fonts/grotesque/grotesque-pro-light.woff") format("woff"), url("/assets/fonts/grotesque/grotesque-pro-light.ttf") format("truetype"), url("/assets/fonts/grotesque/grotesque-pro-light.svg") format("svg");
+    /*font-weight: italic;*/
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Grotesque Pro Regular Italic';
+    src: url("/assets/fonts/grotesque/grotesque-pro-regular-italic.eot");
+    src: url("/assets/fonts/grotesque/grotesque-pro-regular-italic.eot") format("embedded-opentype"), url("/assets/fonts/grotesque/grotesque-pro-regular-italic.html") format("woff2"), url("/assets/fonts/grotesque/grotesque-pro-regular-italic.woff") format("woff"), url("/assets/fonts/grotesque/grotesque-pro-regular-italic.ttf") format("truetype"), url("/assets/fonts/grotesque/grotesque-pro-regular-italic.svg") format("svg");
+    /*font-weight: italic;*/
+    font-style: italic
+}
+
+@font-face {
+    font-family: 'Grotesque Pro Regular';
+    src: url("/assets/fonts/grotesque/grotesque-pro-regular.eot");
+    src: url("/assets/fonts/grotesque/grotesque-pro-regular.eot") format("embedded-opentype"), url("/assets/fonts/grotesque/grotesque-pro-regular.html") format("woff2"), url("/assets/fonts/grotesque/grotesque-pro-regular.woff") format("woff"), url("/assets/fonts/grotesque/grotesque-pro-regular.ttf") format("truetype"), url("/assets/fonts/grotesque/grotesque-pro-regular.svg") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
 /*
 	Aerial by HTML5 UP
 	html5up.net | @n33co
@@ -89,7 +121,7 @@ body {
 
 body, input, select, textarea {
     color: #fff;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Grotesque Pro Regular', 'Source Sans Pro', sans-serif;
     font-size: 15pt;
     font-weight: 300 !important;
     letter-spacing: -0.025em;
