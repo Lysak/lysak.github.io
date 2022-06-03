@@ -1,73 +1,80 @@
 <!DOCTYPE html>
-<html>
-<style type="text/css">
+<html lang="en">
+<style>
     div {
-      /* Finally, a use for "groove"! */
-      border: 24px groove rebeccapurple;
+        /* Finally, a use for "groove"! */
+        border: 24px groove rebeccapurple;
 
-      /*display: table-cell;*/
-      border-radius: 999px;
-      animation: spin 10s linear infinite;
+        /*display: table-cell;*/
+        border-radius: 999px;
+        animation: spin 10s linear infinite;
     }
 
     @keyframes spin {
-      from { transform: rotate(0deg) }
-      to { transform: rotate(360deg) }
+        from {
+            transform: rotate(0deg)
+        }
+        to {
+            transform: rotate(360deg)
+        }
     }
 
 
-    html, body { height: 100% }
+    html, body {
+        height: 100%
+    }
 
     body {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-      background: rebeccapurple;
-      cursor: pointer;
-      background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), /* left top */ radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), /* right top */ radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), /* right bottom */ radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), /* create a base coat to smooth */ /* corner gradients */ linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
-      background-color: #1E3A52;
-      background-image: linear-gradient(30deg, #83C5E5 12%, transparent 12.5%, transparent 87%, #83C5E5 87.5%, #83C5E5), linear-gradient(150deg, #83C5E5 12%, transparent 12.5%, transparent 87%, #83C5E5 87.5%, #83C5E5), linear-gradient(30deg, #83C5E5 12%, transparent 12.5%, transparent 87%, #83C5E5 87.5%, #83C5E5), linear-gradient(150deg, #83C5E5 12%, transparent 12.5%, transparent 87%, #83C5E5 87.5%, #83C5E5), linear-gradient(60deg, #FE5568 25%, transparent 25.5%, transparent 75%, #FE5568 75%, #FE5568), linear-gradient(60deg, #FE5568 25%, transparent 25.5%, transparent 75%, #FE5568 75%, #FE5568);
-      background-position: 0 0, 0 0, 25px 50px, 25px 50px, 0 0, 25px 50px;
-      background-size: 50px 100px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        background: rebeccapurple;
+        cursor: pointer;
+        background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), /* left top */ radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), /* right top */ radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), /* right bottom */ radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), /* create a base coat to smooth */ /* corner gradients */ linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+        background-color: #1E3A52;
+        background-image: linear-gradient(30deg, #83C5E5 12%, transparent 12.5%, transparent 87%, #83C5E5 87.5%, #83C5E5), linear-gradient(150deg, #83C5E5 12%, transparent 12.5%, transparent 87%, #83C5E5 87.5%, #83C5E5), linear-gradient(30deg, #83C5E5 12%, transparent 12.5%, transparent 87%, #83C5E5 87.5%, #83C5E5), linear-gradient(150deg, #83C5E5 12%, transparent 12.5%, transparent 87%, #83C5E5 87.5%, #83C5E5), linear-gradient(60deg, #FE5568 25%, transparent 25.5%, transparent 75%, #FE5568 75%, #FE5568), linear-gradient(60deg, #FE5568 25%, transparent 25.5%, transparent 75%, #FE5568 75%, #FE5568);
+        background-position: 0 0, 0 0, 25px 50px, 25px 50px, 0 0, 25px 50px;
+        background-size: 50px 100px;
     }
 
     body div {
-    	/*background: rebeccapurple;*/
+        /*background: rebeccapurple;*/
     }
 </style>
 <head>
-  <title></title>
+    <title></title>
 </head>
 <body>
+<div>
     <div>
-      <div>
         <div>
-          <div>
             <div>
-              <div>
                 <div>
-                  <div>
                     <div>
+                        <div>
+                            <div>
+                                <div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </div>
         </div>
-      </div>
     </div>
+</div>
 </body>
 <script type="text/javascript">
-    function clickBody() {
-        window.location.href = '/'
-    }
-    document.body.addEventListener("click", clickBody);
+  function clickBody() {
+    window.location.href = '/'
+  }
 
-	var min=50; 
-    var max=90;  
-    var random = Math.floor(Math.random() * (+max - +min)) + +min;
-    document.getElementsByTagName("div")[0].style.width = random + '%';
+  document.body.addEventListener("click", clickBody);
+
+  var min = 50;
+  var max = 90;
+  var random = Math.floor(Math.random() * (+max - +min)) + +min;
+  document.getElementsByTagName("div")[0].style.width = random + '%';
 </script>
 </html>
