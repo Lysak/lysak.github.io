@@ -717,6 +717,10 @@ a:hover {
     color: #fff;
 }
 
+.fa .label {
+    font: normal normal normal 14px/1 'Grotesque Pro Regular', 'Source Sans Pro', sans-serif;
+}
+
 #header nav a:active {
     font-size: 0.95em;
     background: none;
