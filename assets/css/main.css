@@ -171,9 +171,9 @@ a:hover {
     text-transform: none !important;
 }
 
-.icon > .label {
+/*.icon > .label {
     display: none;
-}
+}*/
 
 /* Wrapper */
 
@@ -709,7 +709,7 @@ a:hover {
 }
 
 #header nav a:hover {
-    font-size: 1.1em;
+    transform: scale(1.1);
 }
 
 #header nav a:hover:before {
@@ -727,8 +727,9 @@ a:hover {
     color: #fff;
 }
 
-#header nav a span {
-    display: none;
+#header nav a span.label {
+    display: block;
+    margin-top: 1rem;
 }
 
 /* Footer */
