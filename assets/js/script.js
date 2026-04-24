@@ -1,25 +1,51 @@
-function calculateAge(s) {
-    var bday = moment(s, "X");
-    var today = moment().startOf('day').hour(12);
-    var age = today.year() - bday.year();
-    if (bday > today.subtract(age, 'years'))
-        age = age - 1;
-    return age;
+import moment from 'moment'
+import './snow.js'
+import linkedinSvg from '@phosphor-icons/core/assets/regular/linkedin-logo.svg?raw'
+import githubSvg from '@phosphor-icons/core/assets/regular/github-logo.svg?raw'
+import telegramSvg from '@phosphor-icons/core/assets/regular/telegram-logo.svg?raw'
+import wechatSvg from '@phosphor-icons/core/assets/regular/wechat-logo.svg?raw'
+import envelopeSvg from '@phosphor-icons/core/assets/regular/envelope.svg?raw'
+
+const iconMap = {
+  'linkedin-logo': linkedinSvg,
+  'github-logo': githubSvg,
+  'telegram-logo': telegramSvg,
+  'wechat-logo': wechatSvg,
+  'envelope': envelopeSvg,
 }
 
-var age = calculateAge('812764800');
+document.querySelectorAll('i[data-ph]').forEach(el => {
+  const svg = iconMap[el.dataset.ph]
+  if (svg) el.outerHTML = svg
+})
 
-document.querySelector('#header > p > span').innerHTML = age;
+// --- config ---
+const DATE = '812764800';
+const EXPERIENCE = '1514764800';
+const LOCATION = 'Vinnytsia, Ukraine';
+// --------------
+
+function calculateAge(s) {
+  const day = moment(s, "X");
+  const today = moment().startOf('day').hour(12);
+  let age = today.year() - day.year();
+  if (day > today.subtract(age, 'years')) {
+    age = age - 1;
+  }
+  return age.toString();
+}
+
+document.getElementById('age').innerHTML = calculateAge(DATE);
+document.getElementById('exp').innerHTML = calculateAge(EXPERIENCE);
+document.getElementById('location').innerHTML = LOCATION;
+
 window.onload = function () {
-    document.body.className = '';
+  document.body.className = '';
 }
 window.ontouchmove = function () {
-    return false;
+  return false;
 }
-window.onorientationchange = function () {
-    document.body.scrollTop = 0;
-}
-console.log(`%c 
+console.log(`%c
 < mooooooooooooooooooooooooooooooooooooo >
  ----------------------------------------
     \\   ^__^
