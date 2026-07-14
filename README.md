@@ -13,5 +13,5 @@ sudo rm -R ./pnpm-lock.yaml
 sudo rm -R ./yarn.lock
 sudo rm -R ./yarn-error.log
 sudo rm -R ./.pnpm-store
-corepack use pnpm@latest-10
+corepack use pnpm@latest
 ```
